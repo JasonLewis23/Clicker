@@ -8,7 +8,7 @@ These are the supported images files. If there is a file extension in here that 
 
 The default image scaling algorithm in java can take some time depending upon the size of the image. This is why the verbose command line option is very useful. You will be able to tell from the output if the program is actually frozen or if it is waiting for some images to finish scaling.
 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 Usage:
 
@@ -38,7 +38,7 @@ Recommended Use:
 
 Any combinations of arguments can be used. However, if you use –help, the program will immediately exit and display the help message.
 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 Command Line Args:
 
@@ -58,7 +58,7 @@ Command Line Args:
 
 --verbose print program output to the screen. Optional.
 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 How To:
 
@@ -70,7 +70,7 @@ The 'n' key will go to the next image. If the user presses the 's' key, the imag
 
 There is a counter that keeps track of the current image and a total number of images. When those counters equal each other, the program will have a successful exit. The verbose output and log output will show this occuring. There may be ways the user wants to check to make sure nothing was messed up in the exit. The user can look in the config file (total will equal counter) or the user can sum up the number of files in skipped.txt and clicked.txt and that will equal the total number of images. Also, the user may want to make sure the number of files in clicked.txt is equal to the number of point files in the output folder.
 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 Exit Codes:
 
@@ -146,7 +146,7 @@ Exit Codes:
 
 35 – Path accompanying --out argument not provided.
 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 Other possible errors:
 
