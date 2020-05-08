@@ -1,11 +1,4 @@
-# Clicker
-Utility for clicking feature points on images
-
-Introduction:
-
 Clicker is an application that is used to click feature points on any image. X and Y coordinaes are logged, as well as an option rgb value. The application supports skipping through images, going back and re-clicking, and per-pixel movement of points after they are clicked. For any help running the application, check the usage section. For any help with error codes or the application behaving incorrectly, check the exit codes section.
-
-Notes:
 
 Below is a line located in ClickFrame.java:
 
@@ -44,18 +37,25 @@ Recommended Use:
 Any combinations of arguments can be used. However, if you use –help, the program will immediately exit and display the help message.
 
 Command Line Args:
---out <output path> --out requires a valid directory path. This directory path will be used for the 				output of the program. This argument is required.
---imgs <images path> --imgs requires a valid directory path. This directory must be the location of all 				  of the images that will be clicked. This argument is not recursive so all images 				  must be in the immediate directory. This argument is required.
---help displays a helpt screen for the user depicting command line arguments and a usage statement.
-	Optional.
+
+--out <output path> - requires a valid directory path. This directory path will be used for the output of the program. This argument is required.
+	
+--imgs <images path> - requires a valid directory path. This directory must be the location of all of the images that will be clicked. This argument is not recursive so all images must be in the immediate directory. This argument is required.
+	
+--help displays a helpt screen for the user depicting command line arguments and a usage statement. Optional.
+
 --save archives files that are in the output folder. Optional.
--wf <integer> allows the user to set their own save blocks i.e. this value is the number of images you 
-		can click through before they are written to a file. The default value is 5. I recommend 			not using this option unless you absolutely need to. Optional.
+
+-wf <integer> allows the user to set their own save blocks i.e. this value is the number of images you can click through before they are written to a file. The default value is 5. I recommend not using this option unless you absolutely need to. Optional.
+	
 --log creates a log file for the user. The verbose output is written to the log file. Optional.
+
 --rgb writes rgb values for each clicked point in the point file. Optional.
+
 --verbose print program output to the screen. Optional.
 
 How To:
+
 This section will explain how to use the application. To compile and start the application, look at the section called usage and command line args.
 
 Once the images are displayed, you may start clicking. Use the mouse to click a point. At every clicked coordinate, a small green circle will be drawn. The point that was clicked is at the center of the circle. Any number of points can be clicked so it is up to the users to determine an order and number. 
