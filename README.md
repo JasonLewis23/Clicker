@@ -9,6 +9,7 @@ These are the supported images files. If there is a file extension in here that 
 The default image scaling algorithm in java can take some time depending upon the size of the image. This is why the verbose command line option is very useful. You will be able to tell from the output if the program is actually frozen or if it is waiting for some images to finish scaling.
 
 
+
 Usage:
 
 To compile:
@@ -38,6 +39,7 @@ Recommended Use:
 Any combinations of arguments can be used. However, if you use –help, the program will immediately exit and display the help message.
 
 
+
 Command Line Args:
 
 --out <output path> - requires a valid directory path. This directory path will be used for the output of the program. This argument is required.
@@ -57,6 +59,7 @@ Command Line Args:
 --verbose print program output to the screen. Optional.
 
 
+
 How To:
 
 This section will explain how to use the application. To compile and start the application, look at the section called usage and command line args.
@@ -66,6 +69,7 @@ Once the images are displayed, you may start clicking. Use the mouse to click a 
 The 'n' key will go to the next image. If the user presses the 's' key, the image will be skipped and no points will be saved for that image. The 'b' key will allow the user to go back to the previous image, clearing the points for both images. The max a user will be able to go back will be equal to the command line argument --wf (by default is 5). The arrow keys will move the current point one pixel in the direction of the arrow. New rgb values will be computed as well. The 'd' key will delete the most current point so the user can re click that point.
 
 There is a counter that keeps track of the current image and a total number of images. When those counters equal each other, the program will have a successful exit. The verbose output and log output will show this occuring. There may be ways the user wants to check to make sure nothing was messed up in the exit. The user can look in the config file (total will equal counter) or the user can sum up the number of files in skipped.txt and clicked.txt and that will equal the total number of images. Also, the user may want to make sure the number of files in clicked.txt is equal to the number of point files in the output folder.
+
 
 
 Exit Codes:
@@ -141,6 +145,7 @@ Exit Codes:
 34 – Path accompanying --imgs argument not provided. 
 
 35 – Path accompanying --out argument not provided.
+
 
 
 Other possible errors:
